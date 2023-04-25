@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Axe Warrior</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/favicon.png" />
+  </head>
+  <body class="body" onkeyup="keyCheck(event);" onload="idleAnimation();">
+    <div class="background2" id="background2">
+      <div class="score" id="score">0</div>
+      <img src="images/idle/idle (1).png" class="viking" id="viking" />
+    </div>
+    <div class="endScreen" id="endScreen">
+      <div>Game Over</div>
+      <div>Your Score</div>
+      <div id="finalScore">0</div>
+
+      <button class="btn" onclick="restart()">Try Again !</button>
+      <a href="index.html"><button class="btn">Main Page</button></a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
