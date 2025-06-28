@@ -2,13 +2,19 @@
 <html>
   <head>
     <title>The Axe Warrior</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="images/favicon.png" />
   </head>
-  <body class="body" onkeyup="keyCheck(event);" onload="idleAnimation();">
+  <body class="body" onkeyup="keyCheck(event);" onload="idleAnimation();" ontouchstart="handleTouch(event);">
     <div class="background2" id="background2">
       <div class="score" id="score">0</div>
       <img src="images/idle/idle (1).png" class="viking" id="viking" />
+    </div>
+    <div class="mobile-controls" id="mobileControls">
+      <button class="mobile-btn" id="startBtn" ontouchstart="startGame()" onclick="startGame()">START</button>
+      <button class="mobile-btn" id="jumpBtn" ontouchstart="jumpGame()" onclick="jumpGame()">JUMP</button>
+      <button class="mobile-btn" id="muteBtn" ontouchstart="muteGame()" onclick="muteGame()">MUTE</button>
     </div>
     <div class="endScreen" id="endScreen">
       <div>Game Over</div>
