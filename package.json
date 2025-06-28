@@ -1,0 +1,14 @@
+{
+  "name": "the-axe-warrior",
+  "version": "1.0.0",
+  "description": "A Viking-themed endless runner game",
+  "main": "index.html",
+  "scripts": {
+    "build": "mkdir -p dist && cp -r *.html *.css *.js images sounds dist/",
+    "start": "python3 -m http.server 3000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["game", "html5", "javascript", "viking", "endless-runner"],
+  "author": "",
+  "license": "ISC"
+}
